@@ -145,7 +145,7 @@ def xforms(req):
         context_instance=RequestContext(req))
 
 def XFormForm(*args, **kwargs):
-    required_fields = ['Form Settings', 'name', 'keyword', 'description', 'response', 'active']
+    required_fields = ['Form Settings', 'name', 'keyword', 'description', 'active']
     form_fields = ['name', 'keyword','keyword_prefix', 'command_prefix', 'separator', 'description', 'response', 'active', 'restrict_to', 'restrict_message']
 
     if 'excludes' in kwargs:

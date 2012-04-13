@@ -43,7 +43,7 @@ class XForm(models.Model):
                            help_text="The SMS keyword for this form, must be a slug.")
     description = models.TextField(max_length=255,
                                help_text="The purpose of this form.")
-    response = models.CharField(max_length=255,
+    response = models.CharField(max_length=255, null=True, blank=True,
                                 help_text="The response sent when this form is successfully submitted.")
     active = models.BooleanField(default=True,
                                  help_text="Inactive forms will not accept new submissions.")
